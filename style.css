@@ -1,0 +1,101 @@
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* STYLES */
+
+body {
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+  padding: 1.2rem 1rem 0.5rem 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+table th {
+  text-align: start;
+  padding-bottom: 1rem;
+}
+
+tbody {
+  width: 100%;
+}
+
+td:last-child {
+  text-align: end;
+}
+
+td {
+  padding: 1rem 0rem;
+}
+
+.div-checkout {
+  font-size: 1.2rem;
+}
+
+.subtotal {
+  margin-bottom: 1.5rem;
+}
+
+/* Input Forms */
+
+input {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+#input-price {
+  width: 70px;
+}
+
+.input-quantity {
+  width: 40px;
+}
+
+/* Remowing arrows from input-field (number) */
+#input-price::-webkit-outer-spin-button,
+#input-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Remowing arrows all the time from input-field (number) */
+.input-quantity::-webkit-inner-spin-button,
+.input-quantity::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+/* Buttons */
+
+#btn-checkout {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  font-family: "Noto Sans Mono", monospace;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.remove {
+  color: black;
+  background-color: white;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h1>Shopping Cart</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="col" class="product">Fruit</td>
+            <td scope="col">$<span class="price">1.90</span></td>
+            <td scope="col" class="quantity"><input class="input-quantity" type="number" value="3" min="0"></td>
+            <td scope="col"><div><span>$</span><span class="total"></span></div></td>
+            <td scope="col"><button class="btn remove">Remove</button></td>
+          </tr>
+          <tr>
+            <td scope="col" class="product">Salade</td>
+            <td scope="col">$<span class="price">6.90</span></td>
+            <td scope="col" class="quantity"><input class="input-quantity" type="number" value="3" min="0"></td>
+            <td scope="col"><div><span>$</span><span class="total"></span></div></td>
+            <td scope="col"><button class="btn remove">Remove</button></td>
+          </tr>
+          <tr>
+            <td scope="col" class="product">Coffee</td>
+            <td scope="col">$<span class="price">2.40</span></td>
+            <td scope="col" class="quantity"><input class="input-quantity" type="number" value="3" min="0"></td>
+            <td scope="col"><div><span>$</span><span class="total"></span></div></td>
+            <td scope="col"><button class="btn remove">Remove</button></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><input id="input-product" type="text" placeholder="Add new item"></td>
+            <td><input id="input-price" type="number" placeholder="9.90"></td>
+            <td><button id="btn-add-product" class="btn">Add to cart</button></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="div-checkout">Subtotal:
+        <span>$</span><span class="subtotal"></span>
+      </div>
+      <button id="btn-checkout" class="btn">Checkout</button>
+    </div>
+  </div>
+</body>
+</html>
